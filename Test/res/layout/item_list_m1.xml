@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants">
+    
+<ImageView 
+    android:id="@+id/image_list"
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+    android:layout_marginLeft="20dp"/>
+ <TextView
+        android:id="@+id/item1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="155dp"
+        android:paddingTop="10dp"
+        android:textColor="#f66634"
+        android:textColorHint="#ffcccc"
+        android:textStyle="italic" />
+ <FrameLayout 
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:layout_marginTop="65dp"
+     android:layout_marginLeft="55dp"
+     >
+ <Button 
+     android:id="@+id/button_cancel"
+     android:layout_width="wrap_content"
+     android:layout_height="30dp"
+     android:text="取消报名"
+     android:layout_marginLeft="100dp"
+     android:background="@layout/list_bt"
+     android:textColor="#f66634"
+     android:textSize="15dp"
+     android:layout_gravity="left|center_horizontal"
+     android:focusable="false"
+     android:clickable="true"/>
+ <Button 
+     android:layout_width="wrap_content"
+     android:layout_height="30dp"
+     android:text="签到"
+     android:layout_gravity="right|center_horizontal"
+     android:layout_marginRight="45dp"
+      android:background="@layout/list_bt"
+     android:textColor="#f66634"
+     android:textSize="15dp"
+     android:id="@+id/sign"/>
+ </FrameLayout>
+</RelativeLayout>

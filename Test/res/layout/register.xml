@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/regbc" >
+
+   <!--  <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:background="@layout/shape" />
+ -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/head1" >
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/undo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="注  册"
+            android:textColor="#ffffff"
+            android:textSize="20dp" />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/login_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="150dp"
+        android:background="#00000000"
+        android:gravity="center" >
+
+        <FrameLayout
+            android:id="@+id/username_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="55dp"
+            android:gravity="center" >
+
+            <EditText
+                android:id="@+id/username"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@layout/shape"
+                android:hint="手机号"
+                android:inputType="number"
+                android:maxLength="11"
+                android:paddingLeft="55dp"
+                android:paddingRight="60dp"
+                android:textColor="#f66634"
+                android:textColorHint="#ffcccc"
+                android:textStyle="italic" >
+            </EditText>
+
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_height="21dp"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/user"
+                android:visibility="visible" />
+
+          
+           
+            <Button
+                android:id="@+id/bt_username_clear"
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/close"
+                android:visibility="visible" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/usercode_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/username_layout"
+            android:layout_marginTop="6dp"
+            android:gravity="center" >
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@layout/shape"
+                android:hint="密码"
+                android:inputType="textPassword"
+                android:maxLength="20"
+                android:paddingLeft="55dp"
+                android:paddingRight="60dp"
+                android:textColor="#f66634"
+                android:textColorHint="#ffcccc"
+                android:textStyle="italic" >
+            </EditText>
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="22dp"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginStart="7dp"
+                android:background="@drawable/lock" />
+
+            <Button
+                android:id="@+id/bt_pwd_clear"
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/close"
+                android:visibility="visible" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/resetpassword_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/usercode_layout"
+            android:layout_marginTop="15dp"
+            android:gravity="center" >
+
+            <EditText
+                android:id="@+id/resetpassword"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@layout/shape"
+                android:hint="确认密码"
+                android:inputType="textPassword"
+                android:maxLength="20"
+                android:paddingLeft="55dp"
+                android:paddingRight="60dp"
+                android:textColor="#f66634"
+                android:textColorHint="#ffcccc"
+                android:textStyle="italic" >
+            </EditText>
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="22dp"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginStart="7dp"
+                android:background="@drawable/key" />
+
+            <Button
+                android:id="@+id/bt_pwd_clear1"
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/close"
+                android:visibility="visible" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/shcool_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/resetpassword_layout"
+            android:layout_marginTop="15dp"
+            android:gravity="center" >
+
+            <EditText
+                android:id="@+id/school_edit"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@layout/shape"
+                android:hint="就读学校"
+                android:inputType="text"
+                android:maxLength="20"
+                android:paddingLeft="55dp"
+                android:paddingRight="60dp"
+                android:textColor="#f66634"
+                android:textColorHint="#ffcccc"
+                android:textStyle="italic" >
+            </EditText>
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="22dp"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginStart="7dp"
+                android:background="@drawable/house" />
+
+            <Button
+                android:id="@+id/bt_school_clear"
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/close"
+                android:visibility="visible" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/institute_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/shcool_layout"
+            android:layout_marginTop="15dp"
+            android:gravity="center" >
+
+            <EditText
+                android:id="@+id/institute_edit"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@layout/shape"
+                android:hint="所属学院"
+                android:inputType="text"
+                android:maxLength="20"
+                android:paddingLeft="55dp"
+                android:paddingRight="60dp"
+                android:textColor="#f66634"
+                android:textColorHint="#ffcccc"
+                android:textStyle="italic" >
+            </EditText>
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="22dp"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginStart="7dp"
+                android:background="@drawable/hom" />
+
+            <Button
+                android:id="@+id/bt_institute_clear"
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/close"
+                android:visibility="visible" />
+        </FrameLayout>
+
+        <Button
+            android:id="@+id/register"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/institute_layout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:background="#f66634"
+            android:gravity="center"
+            android:text="注册"
+            android:textColor="@android:color/white" />
+    </RelativeLayout>
+
+</RelativeLayout>
